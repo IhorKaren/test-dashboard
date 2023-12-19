@@ -1,0 +1,35 @@
+:root {
+  --primary-text-color: #9197b3;
+  --secondary-text-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #5932ea;
+  --primary-bg-color: #fafbff;
+  --secondary-bg-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;
+
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

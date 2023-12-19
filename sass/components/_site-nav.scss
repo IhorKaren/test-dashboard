@@ -1,0 +1,41 @@
+.site-nav {
+  display: flex;
+}
+
+.site-nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+  @extend %list;
+}
+
+.site-nav__link {
+  display: flex;
+  align-items: center;
+  width: 231px;
+  height: 46px;
+  padding: 11px;
+
+  color: var(--title-text-color);
+  border-radius: 8px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms $timing-function, background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.site-nav__link--active {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}

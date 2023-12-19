@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Dashboard</title>
+  </head>
+
+  <body data-no-scroll>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a href="./" class="logo"
+          ><img src="./images/logo.png" width="195" height="39" alt="logo" /><span>v.01</span></a
+        >
+        <button
+          type="button"
+          class="header-button"
+          aria-expanded="false"
+          aria-label="Mobile menu switcher"
+          data-menu-button
+        >
+          <svg width="40" height="40">
+            <use class="header-button__cross" href="./images/symbol-defs.svg#close-menu"></use>
+            <use class="header-button__menu" href="./images/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="menu" data-menu>
+          <h2 class="site-nav__item">Dashboard</h2>
+
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a href="/" class="site-nav__link">Product</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="/" class="site-nav__link site-nav__link--active">Customers</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="/" class="site-nav__link">Income</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="/" class="site-nav__link">Promote</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="/" class="site-nav__link">Help</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

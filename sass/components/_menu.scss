@@ -1,0 +1,24 @@
+.menu {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    display: block;
+    width: 306px;
+    height: 100%;
+    padding: 48px 40px;
+    top: 60px;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--secondary-bg-color);
+    box-shadow: 10px 30px 60px 0 #e2ecf9;
+
+    transform: translateX(-100%);
+    transition: transform 250ms $timing-function;
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+}
