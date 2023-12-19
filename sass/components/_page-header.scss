@@ -6,10 +6,10 @@
   left: 0;
   z-index: 9;
 
-  box-shadow: 10px 10px 60px 0px #e2ecf9;
+  box-shadow: 10px 10px 60px 0px var(--shadow-color);
   background-color: var(--secondary-bg-color);
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     width: 306px;
     height: 100%;
   }
@@ -20,7 +20,7 @@
   height: 100%;
   padding: 12px 28px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: column;
     padding: 36px 28px;
@@ -36,7 +36,7 @@
   background-color: transparent;
   border: none;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }

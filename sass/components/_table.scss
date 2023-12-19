@@ -1,10 +1,17 @@
 .table {
+  min-width: 660px;
   width: 100%;
   margin-top: 20px;
 
   border-collapse: collapse;
 
   margin-bottom: 32px;
+
+  font-size: 12px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 }
 
 .table__row {
@@ -15,13 +22,18 @@
     position: absolute;
     bottom: 0;
     left: -50px;
-    width: 100vw;
+    width: 110%;
 
     border-bottom: 1px solid #eeeeee;
+
+    @media screen and (min-width: $desktop) {
+      width: 100vw;
+    }
   }
 }
 
 .table__title {
+  padding-left: 6px;
   padding-bottom: 14px;
 
   text-align: start;
@@ -30,7 +42,7 @@
 }
 
 .table__data {
-  padding: 24px 0;
+  padding: 24px 0 24px 6px;
 
   font-weight: 500;
 
