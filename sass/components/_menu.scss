@@ -1,5 +1,9 @@
 .menu {
   width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 
   @media screen and (max-width: 767px) {
     position: fixed;

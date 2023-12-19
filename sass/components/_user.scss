@@ -1,0 +1,21 @@
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-box__avatar {
+  border-radius: 50%;
+}
+
+.user-box__name {
+  font-weight: 500;
+
+  color: #000000;
+}
+
+.user-box__role {
+  font-size: 12px;
+
+  color: #757575;
+}

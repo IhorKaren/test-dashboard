@@ -1,12 +1,15 @@
 .site-nav {
   width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .site-nav__list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 18px;
   @extend %list;
 }
 
@@ -26,7 +29,6 @@
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
 
   transition: color 250ms $timing-function, background-color 250ms $timing-function,
     fill 250ms $timing-function, stroke 250ms $timing-function;
