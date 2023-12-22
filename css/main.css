@@ -472,6 +472,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  margin-left: auto;
   color: var(--black-text-color);
   font-weight: 500;
   font-size: 12px;
